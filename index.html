@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peta Rumah Sakit Bandung</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
+<body>
+
+  <!-- Tombol buka sidebar -->
+  <button id="openSidebar" class="menu-btn">☰</button>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <button id="closeSidebar" class="close-btn">✕</button>
+    <h2>Peta Rumah Sakit Bandung</h2>
+    <p><b>Kelompok HKI — Informatika</b></p>
+    <input type="text" id="search" placeholder="Cari rumah sakit...">
+    <select id="kategori">
+      <option value="all">Semua Kategori</option>
+    </select>
+    <p id="totalInfo"></p>
+  </div>
+
+  <div id="map"></div>
+
+  <footer>
+    Dibuat oleh <b>Kaysel</b> — Kelompok HKI, 2026
+  </footer>
+
+  <script src="data/data-rumahsakit.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
